@@ -1,0 +1,50 @@
+# .gitignore
+
+# ignore unneeded dotfiles
+.*
+
+# ignore regular directories
+crs/
+dev/
+doc/
+dwn/
+pic
+proj/
+sf/
+storage
+templ/
+vid/
+
+# include files
+!.aliases
+!.autorun
+!.bashrc
+!.profile
+!.gitignore
+!.tmux.conf
+
+# manage .config folder
+!.config/
+.config/*
+!.config/alacritty
+!.config/awesome
+.config/awesome/themes/default
+!.config/autostart
+!.config/doom
+!.config/fish
+.config/fish/conf.d
+.config/fish/completions
+!.config/kitty
+!.config/nvim
+!.config/picom
+!.config/rofi
+!.config/gnome-settings.conf
+!.config/mimeapps.list
+!.config/user-dirs.dirs
+
+# manage .local folder
+!.local/
+.local/state
+.local/bin
+.local/share/*
+!.local/share/applications
