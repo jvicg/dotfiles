@@ -19,6 +19,7 @@ vid/
 !.aliases
 !.autorun
 !.bashrc
+!.de-preview.png
 !.profile
 !.gitignore
 !.tmux.conf
@@ -27,9 +28,15 @@ vid/
 !.config/
 .config/*
 !.config/alacritty
+!.config/autostart
 !.config/awesome
 .config/awesome/themes/default
-!.config/autostart
+!.config/Code
+.config/Code/*
+!.config/Code/User
+.config/Code/User/*
+!.config/Code/User/settings.json
+!.config/Code/User/keybindings.json
 !.config/doom
 !.config/fish
 .config/fish/conf.d

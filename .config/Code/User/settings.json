@@ -1,3 +1,5 @@
+// settings.json
+
 {
     // theming
     "workbench.colorTheme": "doom-one",                 // theme
