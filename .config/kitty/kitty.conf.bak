@@ -1,0 +1,27 @@
+# kitty/kitty.conf
+
+# background opacity
+background_opacity 1
+
+# window title
+hide_titlebar yes
+hide_window_decorations yes
+
+# font config
+font_family Ubuntu Mono Nerd Font
+font_size 16
+
+# cursor config
+cursor_shape beam
+cursor_beam_thickness 25
+cursor_blink_interval 0.6
+cursor_stop_blinking_after 0
+
+# theme
+include ~/.config/kitty/themes/doom_one.conf
+
+
+# BEGIN_KITTY_THEME
+# Adwaita dark
+include current-theme.conf
+# END_KITTY_THEME
