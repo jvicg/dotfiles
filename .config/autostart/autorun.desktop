@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=autorun
+Comment=Script to exec scripts that are intended to run on the background
+Exec=autorun

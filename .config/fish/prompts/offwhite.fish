@@ -1,0 +1,1 @@
+../themes/offwhite/prompt.fish
