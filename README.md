@@ -7,7 +7,10 @@ The main porpouse of this repo is to use it as a backup to my dotfiles but you c
 
 ## configs
 
-| [awesome](.config/awesome/) | [gnome](.config/dconf) | [alacritty](.config/alacritty/alacritty.toml)|
-|-----------------------------|------------------------|----------------------------------------------|
-| [picom](.config/picom/picom.conf) | [fish](.config/fish) | [bash](.bashrc) |
+- [awesome](.config/awesome/) 
+- [fish](.config/fish) 
+- [bash](.bashrc) |
+- [gnome](.config/gnome-settings.conf) 
+- [alacritty](.config/alacritty/alacritty.toml)
+- [picom](.config/picom/picom.conf) 
 
