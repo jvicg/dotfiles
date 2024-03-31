@@ -25,6 +25,14 @@ alias p="sudo pacman"                                     # package manager (pac
 alias v="vagrant"                                         # vagrant 
 alias q="exit"                                            # quit terminal
 
+# manage dotfiles repo
+alias gd="git --git-dir=$HOME/.dots/ --work-tree=$HOME"   # manage dotfiles
+alias gds="gd status --short"                             # get status in short mode
+alias gda="gd add"                                        # add file
+alias gdu="gd add -u"                                     # add updated files
+alias gdc="gd commit -m"                                  # commit changes
+alias gdp="gd push"                                       # push to remote branch
+
 # programs shorters
 alias dc="docker-compose"                                 # docker-compose remapped to "dc"
 alias sys="sudo systemctl"                                # systemctl remapped to "sys"
@@ -66,4 +74,3 @@ alias emacs-restart="emacs-kill && emacs-daemon"          # restart emacs daemon
 alias py-http="sudo python3 -m http.server 80"            # launch a simple http server on working directory
 alias py-venv="python -m venv"                            # create a python virtual enviroment
 
-alias gd="/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME"
