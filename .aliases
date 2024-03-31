@@ -1,21 +1,21 @@
 # .aliases
-# file with aliases used by bash and fish
+# file with aliases used on shells (bash & fish)
 
 # navigation
 alias ..="cd .."                                          # go back one directory
 alias ...="cd ../.."                                      # go back two directories
 
 # system management
+alias up="paru -Syu --noconfirm"                          # full system upgrade
 alias shutd="shutdown now"                                # power off machine
 alias suspend="systemctl suspend"                         # suspend machine
-alias up="paru -Syu --noconfirm"                          # full system upgrade
 
 # program replacements
+alias vim="nvim"                                          # sudo ln -s /bin/nvim /bin/vim ;)
 alias cat="bat --theme=TwoDark --style=header,grid"       # batcat as default cat
-alias ls="eza --group-directories-first -la"              # default ls command
-alias copy="rsync -ahP"                                   # like cp but with progress bar (for large files)
+alias ls="eza --group-directories-first -la"              # eza as default ls
+alias copy="rsync -ahP"                                   # use rsync with progress bar to copy large files 
 alias move="rsync -ahP --remove-source-files"             # same but for mv
-alias vim="nvim"                                          # classic replacement
 
 # ol (oneletters)
 alias g="git"                                             # git
@@ -39,14 +39,14 @@ alias sys="sudo systemctl"                                # systemctl remapped t
 alias lt="eza -Tta"                                       # eza on tree mode
 alias df="df -h"                                          # df with dynamic file's size display
 alias du="du -h"                                          # same as df
-alias ip="ip --color=auto"                                # ip addr with colors
+alias ip="ip --color=auto"                                # ip with colors
 alias neo="neofetch"                                      # neofetch remapped to neo
-alias ff="fastfetch --config paleofetch"                  # neofetch but faster
+alias ff="fastfetch --config paleofetch"                  # same as neofetch but faster
 alias ping="ping -c 2"                                    # to ping 2 times as default
 alias pubip="curl ifconfig.me -w '\n'"                    # get public ip
-alias tt="traceroute"                                     # traceroute remapped to "tracert"
-alias todo="vim $HOME/.TODO.md"                           # open TODO
-alias st="speedtest"                                      # running speedtest script
+alias tt="traceroute"                                     # traceroute remapped to "tt"
+alias todo="vim $HOME/.TODO.md"                           # open TODO.md
+alias st="speedtest"                                      # running network speedtest script
 alias pk="pkill"                                          # kill a process by given PROCESS NAME
 
 # py-coreutils (github.com/nrk19/py-coreutils)
@@ -72,5 +72,5 @@ alias emacs-restart="emacs-kill && emacs-daemon"          # restart emacs daemon
 
 # python
 alias py-http="sudo python3 -m http.server 80"            # launch a simple http server on working directory
-alias py-venv="python -m venv"                            # create a python virtual enviroment
+alias py-venv="python -m venv"                            # create a python virtual enviroment on DIRECTORY
 
