@@ -22,6 +22,7 @@ vid/
 !.de-preview.png
 !.profile
 !.gitignore
+!.screenshots
 !.tmux.conf
 
 # manage .config folder
@@ -31,6 +32,7 @@ vid/
 !.config/autostart
 !.config/awesome
 .config/awesome/themes/default
+!.config/background
 !.config/Code
 .config/Code/*
 !.config/Code/User
