@@ -2,7 +2,6 @@
 ;; main configuration file
 ;; include theme, font, keybindings, etc
 
-
 ;; gpg data
 (setq user-full-name "j.c Guerrero"
       user-mail-address "nrk@kubb.org")
