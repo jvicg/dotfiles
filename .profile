@@ -6,6 +6,9 @@
 # path
 export PATH=$HOME/.local/bin:$HOME/.config/emacs/bin:$HOME/.cargo/bin:$PATH
 
+# adjust umask
+umask 0027
+
 # default programs
 export TERM="alacritty"
 export NAVIGATOR="brave"
