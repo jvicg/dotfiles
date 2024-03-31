@@ -1,0 +1,54 @@
+{
+    // theming
+    "workbench.colorTheme": "doom-one",                 // theme
+    "workbench.tree.indent": 24,                        // indentation of elements in the Explorer
+
+    // font configuration
+    "editor.fontFamily": "Jetbrains Mono",              // font family
+    "editor.fontSize": 13.5,                            // font size
+    "editor.fontLigatures": true,                       // enable ligatures (if available)
+    "window.zoomLevel": 0.65,                           // adjust the font of other elements (e.g terminal, explorer)
+    
+    // enviroment conf
+    "window.menuBarVisibility": "toggle",               // toggle menu with Alt key
+    "explorer.confirmDelete": false,                    // disable confirmation prompt when deleting files
+    "explorer.confirmDragAndDrop": false,               // disable confirmation prompt when dragging and dropping files in the Explorer
+    "editor.minimap.enabled": false,                    // disable the minimap 
+    "symbols.hidesExplorerArrows": false,               // show explorer arrows for Git status in the sidebar
+    "extensions.ignoreRecommendations": true,           // ignore extension recommendations
+    "security.workspace.trust.untrustedFiles": "open",  // open untrusted files without a warning prompt
+    "workbench.startupEditor": "none",                  // set the editor to have no startup tabs
+    "terminal.integrated.defaultProfile.linux": "fish", // default shell
+
+    // vim emulator conf
+    "vim.useSystemClipboard": true,                     // allow to use system's clipboard
+
+    // to remap weird extensions (e.g .cf -> .conf)
+    "files.associations": {
+        "*.cf": "properties",
+        "*.db": "zone",
+        "db.*": "zone",
+        "*.com": "zone",
+        "*.es": "zone",
+        "*.ies": "zone",
+        "*.arpa": "zone",
+        "*.options": "properties",
+        "*.local": "properties",
+        "*.icecast2": "properties",
+        "*.fish": "shellscript"
+    },
+    
+    // spell extensions exclusions
+    "cSpell.userWords": [
+        "hackme",
+        "icecast",
+        "imap",
+        "libnginx",
+        "roundcube",
+        "webroot"
+    ],
+
+    // markdown converter
+    "markdown-pdf.footerTemplate": "<div></div>",
+    "markdown-pdf.headerTemplate": "<div></div>",
+}
