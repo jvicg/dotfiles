@@ -1,8 +1,8 @@
 # dotfiles
 
-The main porpouse of this repo is to use it as a backup to my dotfiles, but I made it public just in case someone gets here and find helpful any of the configuration files. 
+The main porpouse of this repo is to use it as a backup to my dotfiles, but I made it public just in case someone gets here and find helpful any of the configuration files. Peace!
 
-## config files
+## main config files
 
 | [awesome](.config/awesome/) | [fish](.config/fish) | [bash](.bashrc) | 
 |-----------------------------|----------------------|-------------------|
