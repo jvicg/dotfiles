@@ -10,7 +10,7 @@ local icons_path = defaults.paths.theme_dir .. '/icons'
 local theme = {}
 
 -- font & wallpaper
-theme.font_size = "9"
+theme.font_size = "8"
 theme.font = "Prompt " .. theme.font_size
 theme.tags_font = "Prompt Bold 10"
 theme.hotkeys_font = theme.font
