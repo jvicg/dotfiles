@@ -44,7 +44,6 @@ vid/
 .config/fish/conf.d
 .config/fish/completions
 !.config/kitty
-!.config/nvim
 !.config/picom
 !.config/rofi
 !.config/gnome-settings.conf

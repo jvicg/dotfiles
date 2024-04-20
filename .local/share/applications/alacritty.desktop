@@ -2,7 +2,7 @@
 Name=Alacritty
 Comment=A fast, cross-platform, OpenGL terminal emulator
 Exec=alacritty
-Icon=Terminal
+Icon=terminal
 Type=Application
 Categories=System;Utility;TerminalEmulator;
 Keywords=Terminal;Emulator;Shell;TTY;
