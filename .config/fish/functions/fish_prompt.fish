@@ -1,1 +1,1 @@
-/home/nrk/.config/fish/prompts/kashimi.fish
+../prompts/kashimi.fish

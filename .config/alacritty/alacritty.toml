@@ -8,14 +8,14 @@ program = "/bin/fish"
 
 [window]
 opacity = 1
-padding = { x = 20, y = 27 }
+padding = { x = 30, y = 52 }
 startup_mode = "Maximized"
 decorations = "None"
 blur = true
 
 [font]
 normal = { family = "JetBrains Mono", style = "regular" }
-size = 12.5
+size = 15
 
 [cursor]
 blink_interval = 600

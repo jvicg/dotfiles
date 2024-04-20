@@ -16,10 +16,10 @@ function fish_prompt
 
   # manage last status
   if test $last_status = 0
-    set initial_indicator "$blue "
+    set initial_indicator "$blue  "
     set status_indicator "$blue❯"
   else
-    set initial_indicator "$blue "
+    set initial_indicator "$blue  "
     set status_indicator "$blue❯ $red$last_status"
   end
   set -l cwd $normal(prompt_pwd)
@@ -36,7 +36,7 @@ function fish_prompt
     end
 
     if [ (_is_git_dirty) ]
-      set -l dirty "$yellow ✗"
+      set -l dirty "$blue ✗"
       set git_info "$git_info$dirty"
     end
   end

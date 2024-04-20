@@ -1,4 +1,5 @@
 [Default Applications]
+image/jpg=org.gnome.eog.desktop
 image/jpeg=org.gnome.eog.desktop
 image/png=org.gnome.eog.desktop
 image/bmp=org.gnome.eog.desktop
