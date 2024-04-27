@@ -26,12 +26,11 @@
     "workbench.startupEditor": "none",                  // set the editor to have no startup tabs
     "terminal.integrated.defaultProfile.linux": "fish", // default shell
     "editor.stickyScroll.enabled": false,               // disable sticky top bar when scrolling down
-    "editor.linkedEditing": true,                       // link opening and closing tags   
-    "breadcrumbs.enabled": false,                       // disable file name on top of the screen
+    "editor.linkedEditing": true, // disable file name on top of the screen
     "editor.action.clipboardPasteAction": true,         // sanitize paste
 
     // vim emulator conf
-    "vim.useSystemClipboard": true,                     // allow to use system's clipboard
+    "vim.useSystemClipboard": true,                     // allow vim to use system's clipboard
 
     // to remap weird extensions (e.g .cf -> .conf)
     "files.associations": {
@@ -48,6 +47,7 @@
         "*.fish": "shellscript",
         "hosts": "shellscript",
         "*.tftpl" : "hcl",
+        "*.tfrc" : "tf",
         "*.TODO" : "markdown",
     },
     
@@ -68,4 +68,12 @@
     // markdown converter
     "markdown-pdf.footerTemplate": "<div></div>",
     "markdown-pdf.headerTemplate": "<div></div>",
+
+    // vscode pets
+    "vscode-pets.theme": "forest",
+    "vscode-pets.throwBallWithMouse": true,
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.enableMultiLinePasteWarning": false,
 }
