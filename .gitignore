@@ -4,6 +4,7 @@
 .*
 
 # ignore regular directories
+atlas/
 crs/
 dev/
 doc/
@@ -14,6 +15,10 @@ sf/
 storage
 templ/
 vid/
+vir
+gdrive/
+music/
+tmp/
 
 # include files
 !.aliases
@@ -28,6 +33,7 @@ vid/
 # manage .config folder
 !.config/
 .config/*
+!.config/starship.toml
 !.config/alacritty
 !.config/autostart
 !.config/awesome
@@ -55,4 +61,5 @@ vid/
 .local/state
 .local/bin
 .local/share/*
-!.local/share/applications
+.local/lib
+
