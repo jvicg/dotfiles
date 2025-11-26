@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=VirtualBox
-Comment=Virtualization Software
-Exec=VirtualBox -style kvantum
-Icon=virtualbox
-Type=Application
-Categories=System;Emulator;
-Keywords=virtualization;Emulator;
