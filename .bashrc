@@ -4,7 +4,7 @@
 [[ $- != *i* ]] && return
 
 # prompt configuration
-PS1="[\u@\h \W]\\$ "
+eval "$(starship init bash)"
 
 # import aliases
 [[ -f $HOME/.aliases ]] && . $HOME/.aliases
@@ -34,7 +34,7 @@ fi
 bind "set completion-ignore-case on"  # ignore upper and lowercase when TAB completion
 
 # kill proccesses function
-pk()
+function pk()
 {
   if pids=$(pidof $1); then
     for pid in $pids; do 
@@ -44,3 +44,4 @@ pk()
     echo "warning: the process '$1' was not found" 
   fi
 }
+
