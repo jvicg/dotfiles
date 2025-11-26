@@ -11,7 +11,7 @@ alias shutd="shutdown now"                                # power off machine
 alias suspend="systemctl suspend"                         # suspend machine
 
 # program replacements
-alias vim="nvim"                                          # sudo ln -s /bin/nvim /bin/vim ;)
+alias vim="nvim"                                          # sudo ln -s /bin/nvim /bin/vim
 alias cat="bat --theme=TwoDark --style=header,grid"       # batcat as default cat
 alias ls="eza --group-directories-first -la"              # eza as default ls
 alias copy="rsync -ahP"                                   # use rsync with progress bar to copy large files 
@@ -25,6 +25,7 @@ alias p="sudo pacman"                                     # package manager (pac
 alias v="vagrant"                                         # vagrant 
 alias q="exit"                                            # quit terminal
 alias m="make"                                            # make
+alias a="ansible-playbook"                                # ansible-playbook
 
 # manage dotfiles repo
 alias gd="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"    # manage dotfiles
@@ -49,9 +50,13 @@ alias pubip="curl ifconfig.me -w '\n'"                    # get public ip
 alias tt="traceroute"                                     # traceroute remapped to "tt"
 alias todo="vim $HOME/.TODO.md"                           # open TODO.md
 alias st="speedtest"                                      # running network speedtest script
-alias pk="pkill"                                          # kill a process by given PROCESS NAME
+alias pk="pkill -i"                                       # kill a process by given PROCESS NAME
+alias cl="clear"                                          # clear terminal
+alias py="python"                                         # run python
+alias ns="nslookup"                                       # run nslookup
+alias h2t="html2text"                                     # html2text shorter
 
-# py-coreutils (github.com/nrk19/py-coreutils)
+# py-coreutils (github.com/jvicg/py-coreutils)
 alias rm="rmv3"                                           # rm replacement
 alias rml="recover -l"                                    # list files in the trash
 
@@ -73,6 +78,6 @@ alias emacs-daemon="/bin/emacs --daemon"                  # start emacs daemon
 alias emacs-restart="emacs-kill && emacs-daemon"          # restart emacs daemon
 
 # python
-alias py-http="sudo python3 -m http.server 80"            # launch a simple http server on working directory
+alias py-http="sudo python3 -m http.server 8080"          # launch a simple http server on working directory
 alias py-venv="python -m venv"                            # create a python virtual enviroment on DIRECTORY
 
