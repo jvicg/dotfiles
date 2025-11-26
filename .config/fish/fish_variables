@@ -3,10 +3,12 @@
 SETUVAR --export EDITOR:nvim
 SETUVAR --export LIBVIRT_DEFAULT_URI:qemu\x3a///system
 SETUVAR --export NAVIGATOR:brave
+SETUVAR --export --path PATH:/home/nrk/\x2epyenv/bin\x1e/home/nrk/\x2evscode/extensions/ms\x2dpython\x2epython\x2d2025\x2e6\x2e0\x2dlinux\x2dx64/python_files/deactivate/fish\x1e/home/nrk/proj/ansible/inet\x2dautomation/\x2evenv/bin\x1e/home/nrk/\x2evscode/extensions/ms\x2dpython\x2epython\x2d2025\x2e6\x2e0\x2dlinux\x2dx64/python_files/deactivate/fish\x1e/home/nrk/proj/ansible/inet\x2dautomation/\x2evenv/bin\x1e/home/nrk/\x2elocal/bin\x1e/usr/bin\x1e/usr/local/bin\x1e/home/nrk/\x2ecargo/bin\x1e/home/nrk/\x2econfig/emacs/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/home/nrk/\x2elocal/share/gem/ruby/3\x2e0\x2e0/bin\x1e/home/nrk/\x2evscode/extensions/ms\x2dpython\x2epython\x2d2025\x2e6\x2e0\x2dlinux\x2dx64/python_files/deactivate/fish\x1e/home/nrk/proj/ansible/inet\x2dautomation/\x2evenv/bin\x1e/usr/local/sbin\x1e/usr/lib/jvm/default/bin
+SETUVAR --export PYENV_ROOT:/home/nrk/\x2epyenv
 SETUVAR --export TERM:alacritty
 SETUVAR --export VAGRANT_HOME:/media/nrk/storage/vir/vagrant
 SETUVAR --export VISUAL:code
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR fish_color_cancel:\x2d\x2dreverse
 SETUVAR fish_color_command:\x2do\x1enormal
 SETUVAR fish_color_comment:808080
@@ -24,7 +26,7 @@ SETUVAR fish_color_option:\x1d
 SETUVAR fish_color_param:\x2do\x1enormal
 SETUVAR fish_color_quote:afd787
 SETUVAR fish_color_redirection:\x2do\x1ea9b1d6
-SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_search_match:white\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_status:ff6c6b
 SETUVAR fish_color_user:brgreen
@@ -43,4 +45,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dreverse
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/nrk/\x2elocal/bin\x1e/usr/bin\x1e/usr/local/bin\x1e/home/nrk/\x2ecargo/bin\x1e/home/nrk/\x2econfig/emacs/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl
+SETUVAR fish_user_paths:/home/nrk/\x2elocal/bin\x1e/usr/bin\x1e/usr/local/bin\x1e/home/nrk/\x2epyenv/bin\x1e/home/nrk/\x2ecargo/bin\x1e/home/nrk/\x2econfig/emacs/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/home/nrk/\x2elocal/share/gem/ruby/3\x2e0\x2e0/bin
