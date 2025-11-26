@@ -3,7 +3,8 @@
 # autorun
 # script to run scripts needed on the session
 
-cleard &                  # clear old files in the trash
-makeitbind &              # link binaries to .local/bin
-autorenamed &             # remove conflictive chars to downloaded files
-/bin/emacs --daemon       # emacs daemon
+cleard &                                                  # clear old files in the trash
+makeitbind &                                              # link binaries to .local/bin
+autorenamed &                                             # remove conflictive chars to downloaded files
+/bin/emacs --daemon &                                     # emacs daemon
+rclone mount coorporative: ~/gdrive --vfs-cache-mode writes    # mount gdrive folder
