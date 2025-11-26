@@ -2,37 +2,69 @@
 
 {
     // theming
-    "workbench.colorTheme": "doom-one",                 // theme
-    "workbench.iconTheme": "symbols",                   // icon theme
+    "workbench.colorTheme": "doom-one",                 // icon theme
     "workbench.productIconTheme": "fluent-icons",       // side bar icons
-    "workbench.tree.indent": 18,                        // indentation of elements in the Explorer
+    "workbench.iconTheme": "symbols",                   // icon pack
+    "workbench.startupEditor": "none",                  // set the editor to have no startup tabs
+    "window.menuBarVisibility": "compact",              // compact menu bar
+    "workbench.tree.indent": 22,                        // indentation of elements in the Explorer
+
+    // colors
+    "workbench.colorCustomizations":                    // color customization
+    {                  
+        "menu.background": "#21242a",
+		"settings.dropdownBorder": "#21242a",
+        "settings.textInputBackground": "#21242a",
+        "titleBar.activeBackground": "#21242a",
+    },
 
     // font configuration
-    "editor.fontFamily": "JetbrainsMono NF",            // font family
+    "editor.fontFamily": "JetBrainsMono Nerd Font",     // font family
     "editor.fontSize": 14,                              // font size
     "editor.fontLigatures": true,                       // enable ligatures (if available)
-    "window.zoomLevel": 0.65,                           // adjust the font of other elements (e.g terminal, explorer)
+    "editor.rulers": [],                                // set line lenght indicator
+    "window.zoomLevel": -0.0,                            // adjust the font of other elements (e.g terminal, explorer)
     
+    // terminal
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.defaultProfile.linux": "fish", // default shell
+    "terminal.integrated.stickyScroll.enabled": false,  // disable sticky top bar when scrolling down in terminal 
+
     // environment behavior
     "editor.cursorBlinking": "expand",                  // cursor blinking style
-    "editor.cursorSmoothCaretAnimation": "on",          // animation when moving cursor    
-    "window.menuBarVisibility": "toggle",               // toggle menu with Alt key
+    "editor.cursorSmoothCaretAnimation": "on",          // toggle menu with Alt key
+    "editor.stickyScroll.enabled": false,               // disable sticky top bar when scrolling down
+    "editor.linkedEditing": true,                       // disable file name on top of the screen
+    "editor.minimap.enabled": false,                    // disable the minimap 
+    "explorer.compactFolders": false,                   // disable compact folders in the Explorer
     "explorer.confirmDelete": false,                    // disable confirmation prompt when deleting files
     "explorer.confirmDragAndDrop": false,               // disable confirmation prompt when dragging and dropping files in the Explorer
-    "editor.minimap.enabled": false,                    // disable the minimap 
     "symbols.hidesExplorerArrows": false,               // show explorer arrows for Git status in the sidebar
     "extensions.ignoreRecommendations": true,           // ignore extension recommendations
     "security.workspace.trust.untrustedFiles": "open",  // open untrusted files without a warning prompt
-    "workbench.startupEditor": "none",                  // set the editor to have no startup tabs
-    "terminal.integrated.defaultProfile.linux": "fish", // default shell
-    "editor.stickyScroll.enabled": false,               // disable sticky top bar when scrolling down
-    "editor.linkedEditing": true, // disable file name on top of the screen
-    "editor.action.clipboardPasteAction": true,         // sanitize paste
 
     // vim emulator conf
     "vim.useSystemClipboard": true,                     // allow vim to use system's clipboard
 
-    // to remap weird extensions (e.g .cf -> .conf)
+    // copilot
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+
+    // pylance
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.typeEvaluation.strictDictionaryInference": true,
+    "python.analysis.typeEvaluation.strictListInference": true,
+    "python.analysis.typeEvaluation.strictSetInference": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.analysis.typeEvaluation.deprecateTypingAliases": true,
+
+    // use syntax highlighting for unhandled extensions
     "files.associations": {
         "*.cf": "properties",
         "*.db": "zone",
@@ -51,29 +83,17 @@
         "*.TODO" : "markdown",
     },
     
-    // spell extensions exclusions
-    "cSpell.userWords": [
-        "arpa",
-        "hackme",
-        "icecast",
-        "imap",
-        "Jetbrains",
-        "libnginx",
-        "roundcube",
-        "seti",
-        "tftpl",
-        "webroot"
-    ],
-
-    // markdown converter
-    "markdown-pdf.footerTemplate": "<div></div>",
-    "markdown-pdf.headerTemplate": "<div></div>",
-
-    // vscode pets
-    "vscode-pets.theme": "forest",
-    "vscode-pets.throwBallWithMouse": true,
+    // formatters
     "[yaml]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "redhat.ansible"
     },
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+
+    // todo tree
+    "todo-tree.highlights.defaultHighlight": {
+        "icon": "alert",
+        "type": "text",
+        "background": "none",
+        "opacity": 50,
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
 }
