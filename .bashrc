@@ -9,7 +9,7 @@ eval "$(starship init bash)"
 # import aliases
 [[ -f $HOME/.aliases ]] && . $HOME/.aliases
 
-# hist
+# historial
 HISTSIZE=1000
 HISTFILESIZE=2000
 HISTCONTROL=ignoreboth
@@ -19,6 +19,7 @@ shopt -s autocd           # change to named directory
 shopt -s cdspell          # autocorrects cd misspellings
 shopt -s cmdhist          # save multi-line commands in history as single line
 shopt -s dotglob          # wildcards (e.g * or ?) will include .dotfiles
+shopt -s globstar         # use ** to iterate over directory files
 shopt -s histappend       # do not overwrite history
 shopt -s expand_aliases   # expand aliases
 shopt -s checkwinsize     # checks term size when bash regains control
