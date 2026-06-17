@@ -1,65 +1,13 @@
-# .gitignore
+.config/fish/fish_variables
+.bash_history
 
-# ignore unneeded dotfiles
-.*
+.config/Code/User/WorkspaceStorage/
+.config/Code/User/globalStorage/
+.config/Code/User/History/
+.config/Code/CachedData/
+.config/Code/Backups/
 
-# ignore regular directories
-atlas/
-crs/
-dev/
-doc/
-dwn/
-pic
-proj/
-sf/
-storage
-templ/
-vid/
-vir
-gdrive/
-music/
-tmp/
+.config/awesome/errors.log
 
-# include files
-!.aliases
-!.autorun
-!.bashrc
-!.de-preview.png
-!.profile
-!.gitignore
-!.screenshots
-!.tmux.conf
-
-# manage .config folder
-!.config/
-.config/*
-!.config/starship.toml
-!.config/alacritty
-!.config/autostart
-!.config/awesome
-.config/awesome/themes/default
-!.config/background
-!.config/Code
-.config/Code/*
-!.config/Code/User
-.config/Code/User/*
-!.config/Code/User/settings.json
-!.config/Code/User/keybindings.json
-!.config/doom
-!.config/fish
-.config/fish/conf.d
-.config/fish/completions
-!.config/kitty
-!.config/picom
-!.config/rofi
-!.config/gnome-settings.conf
-!.config/mimeapps.list
-!.config/user-dirs.dirs
-
-# manage .local folder
-!.local/
-.local/state
-.local/bin
-.local/share/*
-.local/lib
-
+*.tmp
+*.log
