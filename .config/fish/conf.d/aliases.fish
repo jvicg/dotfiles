@@ -1,0 +1,1 @@
+/home/nrk/.aliases
