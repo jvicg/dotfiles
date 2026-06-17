@@ -15,7 +15,7 @@ blur = true
 
 [font]
 normal = { family = "JetBrains Mono", style = "regular" }
-size = 11
+size = 10.5
 
 [cursor]
 blink_interval = 600
