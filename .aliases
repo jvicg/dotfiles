@@ -1,5 +1,6 @@
 # .aliases
 # file with aliases used on shells (bash & fish)
+# vi: set ft=bash :
 
 # navigation
 alias ..="cd .."                                          # go back one directory
@@ -16,8 +17,11 @@ alias cat="bat --theme=TwoDark --style=header,grid"       # batcat as default ca
 alias ls="eza --group-directories-first -la"              # eza as default ls
 alias copy="rsync -ahP"                                   # use rsync with progress bar to copy large files 
 alias move="rsync -ahP --remove-source-files"             # same but for mv
+alias df="duf"                                            # replace df with duf
+alias rm="trash-put"                                      # send files to trash instead of removing
 
 # ol (oneletters)
+alias c="cd"                                              # change directory (zoxide)
 alias g="git"                                             # git
 alias k="kubectl"                                         # kubernetes
 alias d="docker"                                          # docker
@@ -26,39 +30,53 @@ alias v="vagrant"                                         # vagrant
 alias q="exit"                                            # quit terminal
 alias m="make"                                            # make
 alias a="ansible-playbook"                                # ansible-playbook
-
-# manage dotfiles repo
-alias gd="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"    # manage dotfiles
-alias gds="gd status --short"                             # get status in short mode
-alias gda="gd add"                                        # add file
-alias gdu="gd add -u"                                     # add updated files
-alias gdc="gd commit -m"                                  # commit changes
-alias gdp="gd push"                                       # push to remote branch
+alias r="VISUAL=$EDITOR ranger --cmd='set show_hidden!'"  # show hidden files with ranger
 
 # programs shorters
-alias dc="docker-compose"                                 # docker-compose remapped to "dc"
+alias dc="docker-compose"                                 # docker-compose 
 alias tf="terraform"                                      # terraform
-alias sys="sudo systemctl"                                # systemctl remapped to "sys"
-alias lt="eza -Tta"                                       # eza on tree mode
-alias df="df -h"                                          # df with dynamic file's size display
-alias du="du -h"                                          # same as df
-alias ip="ip --color=auto"                                # ip with colors
-alias neo="neofetch"                                      # neofetch remapped to neo
+alias sys="sudo systemctl"                                # systemctl 
+alias neo="neofetch"                                      # neofetch 
 alias ff="fastfetch --config paleofetch"                  # same as neofetch but faster
-alias ping="ping -c 2"                                    # to ping 2 times as default
-alias pubip="curl ifconfig.me -w '\n'"                    # get public ip
-alias tt="traceroute"                                     # traceroute remapped to "tt"
-alias todo="vim $HOME/.TODO.md"                           # open TODO.md
-alias st="speedtest"                                      # running network speedtest script
-alias pk="pkill -i"                                       # kill a process by given PROCESS NAME
+alias myip="curl ifconfig.me -w '\n'"                     # get public ip
 alias cl="clear"                                          # clear terminal
 alias py="python"                                         # run python
 alias ns="nslookup"                                       # run nslookup
-alias h2t="html2text"                                     # html2text shorter
+alias h2t="html2text"                                     # html2text pretty style
 
-# py-coreutils (github.com/jvicg/py-coreutils)
-alias rm="rmv3"                                           # rm replacement
-alias rml="recover -l"                                    # list files in the trash
+# append opts
+alias lt="eza -Tta"                                       # eza on tree mode
+alias du="du -h"                                          # du with dynamic file's sizes
+alias ip="ip --color=auto"                                # ip with colors
+alias grep="grep --color=auto"                            # grep with colors
+alias ping="ping -c2"                                     # to ping 2 times as default
+alias pk="pkill -i"                                       # kill a process by given PROCESS NAME
+
+# git shorters
+alias gs="git status"                                     # status
+alias ga="git add"                                        # add
+alias gc="git commit"                                     # commit
+alias gp="git push"                                       # push
+alias gch="git checkout"                                  # checkout
+alias gss="git status --short"                            # status in short mode
+alias gl="git log"
+alias gls="git log --graph --oneline --decorate --all"    # git log short
+
+# trash handling
+alias tput="trash-put"                                    # send to trash
+alias trecover="trash-recover"                            # recover from trash
+alias tlist="trash-list"                                  # list trash files
+
+# manage dotfiles repo
+alias gd="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"    # manage dotfiles repo
+alias gds="gd status --short"                             # get status in short mode
+alias gda="gd add"                                        # add file
+alias gdc="gd commit"                                     # commit changes
+alias gdp="gd push"                                       # push to remote branch
+
+# # py-coreutils (github.com/jvicg/py-coreutils)
+# alias rm="rmv3"                                           # rm replacement
+# alias rml="recover -l"                                    # list files in the trash
 
 # virsh
 alias vc="virsh"                                          # virsh command line
@@ -71,13 +89,10 @@ alias settings="gnome-control-center"                     # open settings
 alias keybindings="settings keyboard"                     # open keyboard settings section (keybindings)
 alias sound="settings sound"                              # open sound settings
 
-# emacs
-alias emacs="emacsclient -c -a 'emacs'"                   # emacs client as default emacs editor
-alias emacs-kill="emacsclient -e '(kill-emacs)'"          # kill emacs
-alias emacs-daemon="/bin/emacs --daemon"                  # start emacs daemon
-alias emacs-restart="emacs-kill && emacs-daemon"          # restart emacs daemon
+# python modules
+alias py-http="python3 -m http.server 8080"               # launch a simple http server on working directory
+alias py-venv="python3 -m venv"                           # create a python virtual enviroment on DIRECTORY
 
-# python
-alias py-http="sudo python3 -m http.server 8080"          # launch a simple http server on working directory
-alias py-venv="python -m venv"                            # create a python virtual enviroment on DIRECTORY
+# tmp
+alias akcli="poetry run akcli"
 
