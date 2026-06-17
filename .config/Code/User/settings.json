@@ -20,23 +20,30 @@
 
     // font configuration
     "editor.fontFamily": "JetBrainsMono Nerd Font",     // font family
-    "editor.fontSize": 14,                              // font size
+    "editor.fontSize": 13.5,                              // font size
     "editor.fontLigatures": true,                       // enable ligatures (if available)
     "editor.rulers": [],                                // set line lenght indicator
-    "window.zoomLevel": -0.0,                            // adjust the font of other elements (e.g terminal, explorer)
+    "window.zoomLevel": -0.0,                           // adjust the font of other elements (e.g terminal, explorer)
     
     // terminal
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.inheritEnv": false,
     "terminal.integrated.defaultProfile.linux": "fish", // default shell
     "terminal.integrated.stickyScroll.enabled": false,  // disable sticky top bar when scrolling down in terminal 
+    "terminal.integrated.enableKittyKeyboardProtocol": false,  // fix conflict when sending some chars to nvim 
+
+    "terminal.integrated.profiles.linux": {
+        "fish": {
+            "path": "/usr/bin/fish",
+            "args": ["--login"]
+        }
+    },
 
     // environment behavior
     "editor.cursorBlinking": "expand",                  // cursor blinking style
     "editor.cursorSmoothCaretAnimation": "on",          // toggle menu with Alt key
     "editor.stickyScroll.enabled": false,               // disable sticky top bar when scrolling down
-    "editor.linkedEditing": true,                       // disable file name on top of the screen
-    "editor.minimap.enabled": false,                    // disable the minimap 
+    "editor.linkedEditing": true, // disable the minimap 
     "explorer.compactFolders": false,                   // disable compact folders in the Explorer
     "explorer.confirmDelete": false,                    // disable confirmation prompt when deleting files
     "explorer.confirmDragAndDrop": false,               // disable confirmation prompt when dragging and dropping files in the Explorer
@@ -49,7 +56,7 @@
 
     // copilot
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "plaintext": false,
         "markdown": false,
         "scminput": false
@@ -57,6 +64,7 @@
 
     // pylance
     "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.typeEvaluation.strictDictionaryInference": true,
     "python.analysis.typeEvaluation.strictListInference": true,
@@ -84,8 +92,12 @@
     },
     
     // formatters
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "[yaml]": {
         "editor.defaultFormatter": "redhat.ansible"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
     // todo tree
@@ -96,4 +108,8 @@
         "opacity": 50,
     },
     "github.copilot.nextEditSuggestions.enabled": true,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.suggest.enabled": false,
+    "python.defaultInterpreterPath": "/bin/python",
+    "claudeCode.preferredLocation": "panel",
 }
