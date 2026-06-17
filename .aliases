@@ -5,6 +5,7 @@
 # navigation
 alias ..="cd .."                                          # go back one directory
 alias ...="cd ../.."                                      # go back two directories
+alias ....="cd ../../.."                                  # go back three directories
 
 # system management
 alias up="paru -Syu --noconfirm"                          # full system upgrade
@@ -30,7 +31,7 @@ alias v="vagrant"                                         # vagrant
 alias q="exit"                                            # quit terminal
 alias m="make"                                            # make
 alias a="ansible-playbook"                                # ansible-playbook
-alias r="VISUAL=$EDITOR ranger --cmd='set show_hidden!'"  # show hidden files with ranger
+alias r="VISUAL=$EDITOR ranger"                           # ranger
 
 # programs shorters
 alias dc="docker-compose"                                 # docker-compose 
@@ -68,7 +69,7 @@ alias trecover="trash-recover"                            # recover from trash
 alias tlist="trash-list"                                  # list trash files
 
 # manage dotfiles repo
-alias gd="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"    # manage dotfiles repo
+alias gd="git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"    # manage dotfiles repo
 alias gds="gd status --short"                             # get status in short mode
 alias gda="gd add"                                        # add file
 alias gdc="gd commit"                                     # commit changes
