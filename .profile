@@ -1,12 +1,11 @@
-# .profile
+# ~/.profile
 
 # path
 export PATH=$HOME/.local/bin:$HOME/.config/emacs/bin:$HOME/.cargo/bin:$PATH
 
 # login configuration
-[[ -f "$HOME/.bashrc" ]] && . $HOME/.bashrc       # load bashrc
-[[ -n "$SSH_CLIENT" ]] && fish                    # set fish for ssh connections
-[[ -d "$HOME/tmp" ]] && /bin/rm -rf $HOME/tmp/*   # clear tmp dir
+[ -f "$HOME/.bashrc" ] && . $HOME/.bashrc       # load bashrc
+[ -n "$SSH_CLIENT" ] && /usr/bin/fish           # set fish for ssh connections
 
 # adjust umask
 umask 0027
