@@ -14,7 +14,7 @@ set --global fish_color_normal --bold normal                 # default text colo
 set --global fish_color_command --bold normal                # commands: ls, git, pacman, systemctl
 set --global fish_color_param --bold normal                  # arguments/parameters: -la, /tmp, file.txt
 set --global fish_color_error red                            # syntax errors / invalid commands
-set --global fish_color_autosuggestion '#7d7d7d'             # autosuggestions shown while typing
+set --global fish_color_autosuggestion 7d7d7d                # autosuggestions shown while typing
 set --global fish_color_redirection --bold brwhite           # redirections: >, >>, 2>, <
 set --global fish_color_end afafff                           # command separators: ;, &, |
 set --global fish_color_operator white                       # operators: &&, ||, command substitutions
