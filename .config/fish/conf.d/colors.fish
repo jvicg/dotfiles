@@ -15,21 +15,21 @@ set --global fish_color_command --bold normal                # commands: ls, git
 set --global fish_color_param --bold normal                  # arguments/parameters: -la, /tmp, file.txt
 set --global fish_color_error red                            # syntax errors / invalid commands
 set --global fish_color_autosuggestion 7d7d7d                # autosuggestions shown while typing
-set --global fish_color_redirection --bold brwhite           # redirections: >, >>, 2>, <
-set --global fish_color_end afafff                           # command separators: ;, &, |
+set --global fish_color_redirection --italic --bold normal   # redirections: >, >>, 2>, <
+set --global fish_color_end white                            # command separators: ;, &, |
 set --global fish_color_operator white                       # operators: &&, ||, command substitutions
 set --global fish_color_escape brcyan                        # escaped characters: \n, \t, escaped spaces
 set --global fish_color_quote afd787                         # quoted strings
 set --global fish_color_comment 808080                       # comments: # comment
 set --global fish_color_option                               # options/flags; empty = default
 set --global fish_color_keyword                              # keywords: if, else, for, while, function
+set --global fish_color_valid_path --underline               # valid filesystem paths
 
 
 # -----------------------------
 # paths and prompt-related colors
 # -----------------------------
 
-set --global fish_color_valid_path --underline               # valid filesystem paths
 set --global fish_color_cwd green                            # current directory in prompt
 set --global fish_color_cwd_root red                         # current directory when root
 set --global fish_color_user brgreen                         # username in prompt
