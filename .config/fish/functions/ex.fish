@@ -3,7 +3,7 @@
 
 function ex --description "Extract multiple filetypes with a single command"
   if test (count $argv) -eq 0
-    echo "usage: ex <file> [<file2> ...]"
+    echo "usage: ex FILE [FILE ...]"
     return 1
   end
 
