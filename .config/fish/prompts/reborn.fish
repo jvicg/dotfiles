@@ -1,1 +1,0 @@
-../themes/reborn/prompt.fish
