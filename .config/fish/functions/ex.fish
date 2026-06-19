@@ -1,5 +1,6 @@
-# ~/.config/fish/functions/ex.fish
+# fish/functions/ex.fish
 # ex - one command for any archive type, accepts multiple files
+
 function ex --description "Extract multiple filetypes with a single command"
   if test (count $argv) -eq 0
     echo "usage: ex <file> [<file2> ...]"

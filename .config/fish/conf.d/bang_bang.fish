@@ -1,5 +1,5 @@
-# bang-bang funcs
-# replicates bash !! (run last command) and !$ (last argument) behavior
+# fish/conf.d/bang_bang.fish
+# bang-bang functions - replicates bash `!!` to write last command and `!$` to write last argument
 
 function __history_previous_command
   switch (commandline -t)
