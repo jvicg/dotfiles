@@ -20,9 +20,3 @@ fish_add_path --global --prepend \
 pyenv init - fish | source
 zoxide init --cmd cd fish | source
 starship init fish | source
-
-# autorun startx to start awesome WM, if not using Gnome as DE
-if status is-login; and test -z "$SSH_TTY"; and test "$DESKTOP_SESSION" != "gnome";
-   exec startx > $HOME/.log/awesome/init.log 2>$HOME/.log/awesome/errors.log  # redirect the output of startx to log files
-end
-
