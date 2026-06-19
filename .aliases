@@ -1,4 +1,4 @@
-# .aliases
+# ~/.aliases
 # file with aliases used on shells (bash & fish)
 # vi: set ft=bash :
 
@@ -19,7 +19,7 @@ alias ls="eza --group-directories-first -la"              # eza as default ls
 alias copy="rsync -ahP"                                   # use rsync with progress bar to copy large files 
 alias move="rsync -ahP --remove-source-files"             # same but for mv
 alias df="duf"                                            # replace df with duf
-alias rm="trash-put"                                      # send files to trash instead of removing
+# alias rm="trash-put"                                      # send files to trash instead of removing
 
 # ol (oneletters)
 alias c="cd"                                              # change directory (zoxide)
@@ -65,7 +65,7 @@ alias gls="git log --graph --oneline --decorate --all"    # git log short
 
 # trash handling
 alias tput="trash-put"                                    # send to trash
-alias trecover="trash-recover"                            # recover from trash
+alias trestore="trash-restore"                            # restore from trash
 alias tlist="trash-list"                                  # list trash files
 
 # manage dotfiles repo
@@ -75,9 +75,9 @@ alias gda="gd add"                                        # add file
 alias gdc="gd commit"                                     # commit changes
 alias gdp="gd push"                                       # push to remote branch
 
-# # py-coreutils (github.com/jvicg/py-coreutils)
-# alias rm="rmv3"                                           # rm replacement
-# alias rml="recover -l"                                    # list files in the trash
+# py-coreutils (github.com/jvicg/py-coreutils)
+alias rm="rmv3"                                           # rm replacement
+alias rml="recover -l"                                    # list files in the trash
 
 # virsh
 alias vc="virsh"                                          # virsh command line
@@ -93,7 +93,4 @@ alias sound="settings sound"                              # open sound settings
 # python modules
 alias py-http="python3 -m http.server 8080"               # launch a simple http server on working directory
 alias py-venv="python3 -m venv"                           # create a python virtual enviroment on DIRECTORY
-
-# tmp
-alias akcli="poetry run akcli"
 
