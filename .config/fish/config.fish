@@ -3,14 +3,13 @@
 # vim: set ft=fish :
 
 # disable fish greeting
-set -g fish_greeting
+set --global fish_greeting
 
 # path
 fish_add_path --global --prepend \
     $HOME/.pyenv/bin \
     $HOME/.local/bin \
     $HOME/.cargo/bin \
-    $HOME/.config/emacs/bin \
     $HOME/.local/share/gem/ruby/3.0.0/bin \
     /usr/bin/site_perl \
     /usr/bin/vendor_perl \
