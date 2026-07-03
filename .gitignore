@@ -1,6 +1,5 @@
 .config/fish/fish_variables
-.bash_history
-.python_history
+.*_history
 
 .config/Code/User/WorkspaceStorage/
 .config/Code/User/globalStorage/
