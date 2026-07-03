@@ -52,6 +52,7 @@ alias ip="ip --color=auto"                                # ip with colors
 alias grep="grep --color=auto"                            # grep with colors
 alias ping="ping -c2"                                     # to ping 2 times as default
 alias pk="pkill -i"                                       # kill a process by given PROCESS NAME
+alias cal="cal --monday"                                  # displays Monday as 1st day of week
 
 # git shorters
 alias gs="git status"                                     # status
