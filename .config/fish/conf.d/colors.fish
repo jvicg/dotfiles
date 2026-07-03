@@ -1,10 +1,5 @@
 # fish/conf.d/colors.fish
 # custom fish syntax highlighting colors
-#
-# notes:
-# - `--global` stores these variables globally for the current fish session.
-# - `--reverse` swaps foreground/background.
-# - `--background=color` sets the background color.
 
 # -----------------------------
 # core command-line highlighting
