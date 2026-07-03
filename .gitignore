@@ -1,13 +1,7 @@
 .config/fish/fish_variables
-.*_history
-
-.config/Code/User/WorkspaceStorage/
-.config/Code/User/globalStorage/
-.config/Code/User/History/
-.config/Code/CachedData/
-.config/Code/Backups/
-
 .config/awesome/errors.log
 
 *.tmp
 *.log
+.*_history
+
