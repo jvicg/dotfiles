@@ -10,7 +10,7 @@ M.base46 = {
   hl_override = {
     Normal = { bg = "#21242a" },
     NormalNC = { bg = "#21242a" },
-    -- NvimTreeNormal = { bg = "#16213e" },
+    NvimTreeNormal = { bg = "#21242a" },
   },
 }
 
