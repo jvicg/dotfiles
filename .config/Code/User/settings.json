@@ -12,10 +12,36 @@
     // colors
     "workbench.colorCustomizations":                    // color customization
     {                  
+        // general colors
         "menu.background": "#21242a",
 		"settings.dropdownBorder": "#21242a",
         "settings.textInputBackground": "#21242a",
-        "titleBar.activeBackground": "#21242a",
+
+        // titlebar colors
+        "titleBar.activeBackground": "#282c34",
+
+        // terminal bg and fg colors
+        "terminal.foreground": "#b8b8b8",
+
+        // terminal regular colors
+        "terminal.ansiBlack": "#414868",
+        "terminal.ansiBlue": "#7aa2f7",
+        "terminal.ansiCyan": "#a9b1d6",
+        "terminal.ansiGreen": "#73daca",
+        "terminal.ansiMagenta": "#bb9af7",
+        "terminal.ansiRed": "#f7768e",
+        "terminal.ansiWhite": "#c0caf5",
+        "terminal.ansiYellow": "#e0af68",
+
+        // terminal bright colors
+        "terminal.ansiBrightBlack": "#414868",
+        "terminal.ansiBrightBlue": "#7aa2f7",
+        "terminal.ansiBrightCyan": "#a9b1d6",
+        "terminal.ansiBrightGreen": "#73daca",
+        "terminal.ansiBrightMagenta": "#bb9af7",
+        "terminal.ansiBrightRed": "#f7768e",
+        "terminal.ansiBrightWhite": "#c0caf5",
+        "terminal.ansiBrightYellow": "#e0af68"
     },
 
     // font configuration
@@ -112,4 +138,11 @@
     "terminal.integrated.suggest.enabled": false,
     "python.defaultInterpreterPath": "/bin/python",
     "claudeCode.preferredLocation": "panel",
+    "workbench.experimental.modernUI": true,
+    "better-todo-tree.highlights.defaultHighlight": {
+        "icon": "alert",
+        "type": "text",
+        "background": "none",
+        "opacity": 50
+    },
 }
